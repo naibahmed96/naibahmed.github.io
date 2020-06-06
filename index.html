@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="jscolor.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Landing page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1><span style="color: #3cbfe2">Naib's : </span><span style="color: #e270cf">Pixel</span>
-    <span style="color: #e2d45e">Art</span> <span style="color: #5be2cc">Maker</span></h1>
+  <section id="landing_page">
+    <div class="heading_lead">
+      <h1>The biggest startup event of the year</h1>
+    </div>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        <span id="gridHeight">Grid Height:</span>
-        <input type="number" id="input_height" name="height" min="1" max="100" value="1">
-        <span id="gridWidth">Grid Width:</span>
-        <input type="number" id="input_width" name="width" min="1" max="100" value="1"><br>
-        <button id="submit" type="button" onclick="makeGrid()">Submit</button>
-        <button type="reset" onclick="backUp()">Reset</button>
-    </form>
-<div id="error"></div>
-    <h2>Pick A Color</h2>
-<input type="color" id="colorPicker" value="#FFFFFF">
+    <div class="button_lead">
+      <!-- <hr> -->
+      <div class="line"></div>
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup {
+          clear: left;
+          font: 14px Helvetica, Arial, sans-serif;
+        }
+      
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+        <form action="https://pdns.us10.list-manage.com/subscribe/post?u=4409fcc717e81e97dab85e14d&amp;id=3d41564cf6"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+          novalidate>
+          <div id="mc_embed_signup_scroll"> 
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                name="b_4409fcc717e81e97dab85e14d_3d41564cf6" tabindex="-1" value=""></div>
+            <input class="btn btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+            >
+          </div>
+        </form>
+      </div>
+      
+      <!--End mc_embed_signup-->
 
-    <h2>Design Canvas</h2>
-    <table id="design_canvas"> <!--aka grid container-->
-    </table>
-
-    <script src="designs.js"></script>
+      <!-- <button type="submit" class="btn-primary">Find out more</button> -->
+    </div>
+  </section>
+  
 </body>
 </html>
